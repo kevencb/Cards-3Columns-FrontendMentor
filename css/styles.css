@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.main {
+  height: auto;
+  margin: 8rem auto 2rem;
+  max-width: 96rem;
+  width: 90%;
+}
+
+.cards {
+  border-radius: 1rem;
+  display: grid;
+  overflow: hidden;
+}
+.cards .card {
+  align-items: flex-start;
+  color: hsl(0deg, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem 5rem;
+}
+.cards .card__icon {
+  margin: 2.4rem 0 0;
+}
+.cards .card__content {
+  margin: 4.2rem 0 4.2rem;
+}
+.cards .card__content--title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2.4rem;
+  text-transform: uppercase;
+}
+.cards .card__content--paragraph {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.cards .card__button {
+  align-items: center;
+  background-color: hsla(0deg, 0%, 100%, 0.75);
+  border-radius: 8rem;
+  display: flex;
+  height: 4.8rem;
+  justify-content: center;
+  text-decoration: none;
+  width: 14rem;
+}
+.cards .card__button:hover {
+  background-color: transparent;
+  border: 2px solid hsla(0deg, 0%, 100%, 0.75);
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.cards .card__first {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.cards .card__second {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.cards .card__third {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.cards .font-brightOrange {
+  color: hsl(31deg, 77%, 52%);
+}
+.cards .font-darkCyan {
+  color: hsl(184deg, 100%, 22%);
+}
+.cards .font-darkGreen {
+  color: hsl(179deg, 100%, 13%);
+}
+
+@media (min-width: 768px) {
+  .main {
+    align-items: center;
+    display: flex;
+    height: calc(100vh - 5rem);
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card__button {
+    margin-top: 9rem;
+  }
+}
+footer {
+  align-items: center;
+  color: hsl(179deg, 100%, 13%);
+  display: flex;
+  font-size: 1rem;
+  height: 5rem;
+  justify-content: center;
+}
+footer a {
+  color: hsl(184deg, 100%, 22%);
+}/*# sourceMappingURL=styles.css.map */
